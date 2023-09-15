@@ -20,7 +20,7 @@ class AddressFactory extends Factory
             'address' => $this->faker->streetAddress(),
             'city' => $this->faker->city(),
             'state' => $this->faker->stateAbbr(),
-            'zipcode' => $this->faker->numberBetween(13720000, 14098022),
+            'zip_code' => $this->faker->numberBetween(13720000, 14098022),
             'district' => $this->faker->word(),
             'number' => $this->faker->numberBetween(0, 300),
             'complement' => $this->faker->word(),

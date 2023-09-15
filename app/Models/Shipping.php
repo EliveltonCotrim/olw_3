@@ -15,7 +15,7 @@ class Shipping extends Model
         'address',
         'city',
         'state',
-        'zipcode',
+        'zip_code',
         'district',
         'number',
         'complement',

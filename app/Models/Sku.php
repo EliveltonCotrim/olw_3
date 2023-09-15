@@ -18,9 +18,11 @@ class Sku extends Model
         'price',
     ];
 
-    public function skus(): BelongsToMany
+    public function features(): BelongsToMany
     {
-        return $this->belongsToMany(Order::class)->using(OrderSku::class);
+        return $this->belongsToMany(Feature::class)
+            ->using(FeatureSku::class)
+            ->withPivot('value');
     }
 
     public function product(): BelongsTo

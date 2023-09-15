@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable()->constrained();
-            $table->foreignId('session_id')->nullable();
+            $table->string('session_id')->nullable();
             $table->decimal('total', 10, 2)->nullable();
             $table->integer('status'); //ENUM
             $table->timestamps();
